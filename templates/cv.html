@@ -1,17 +1,9 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
-<nav>
-  <h1 class="text-3xl font-bold underline">CV MAXIME !</h1>
-
-</nav>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <h1 >Bonjour !</h1>
-  {% endfor %}
-  {% block content %}{% endblock %}
-</section>
+<head>
+  <title>CV Maxime Franc</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+<body class="bg-red-600">
+  <h1 class="text-3xl font-bold underline">Maxime Franc</h1>
+</body>
